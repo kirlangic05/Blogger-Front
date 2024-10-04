@@ -12,7 +12,7 @@ export default function EditBlog() {
   }
   const onSubmit=async(e)=>{
     e.preventDefault()
-    await axios.put(`http://localhost:8080/blog/editblog/${blog.id}`,blogData)
+    await axios.put(`http://185.240.104.244:8080/blog/editblog/${blog.id}`,blogData)
     navigate("/")
   }
   return (

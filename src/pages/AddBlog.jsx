@@ -24,7 +24,7 @@ export default function AddBlog() {
 
   const onSubmit=async(e)=>{
     e.preventDefault()
-    await axios.post("http://localhost:8080/blog/saveblog",blogData)
+    await axios.post("http://185.240.104.244:8080/blog/saveblog",blogData)
     navigate("/")
   }
   return (

@@ -12,8 +12,8 @@ import AddUser from './pages/AddUser'
 
 
 export const blogLoader = async()=>{
-  const blog = await axios.get("http://localhost:8080/blog/getblog")
-  const users =await axios.get("http://localhost:8080/users/getuser")
+  const blog = await axios.get("http://185.240.104.244:8080/blog/getblog")
+  const users =await axios.get("http://185.240.104.244:8080/users/getuser")
   return{blog:blog.data, users: users.data}
 }
 
@@ -35,7 +35,7 @@ const getAllUsers= async()=>{
 
 const getBlog=async({params})=>{
   let blogs=[]
-  await axios.get(`http://localhost:8080/blog/getblog/${params.id}`).then(res=>{
+  await axios.get(`http://185.240.104.244:8080/blog/getblog/${params.id}`).then(res=>{
     blogs=res.data
   })
   return blogs
