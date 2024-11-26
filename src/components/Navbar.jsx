@@ -19,7 +19,7 @@ export default function Navbar() {
               <a href="/saveblog" className="btn btn-outline-light" type="submit">Add Blog</a>
             </form>
             <form className="d-flex" role="search">
-              <a href="/saveuser" className="btn btn-outline-light" type="submit">Add User</a>
+              <a href="/saveuser" className="btn btn-outline-light" type="submit">Register</a>
             </form>
           </div>
         </div>
