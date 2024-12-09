@@ -22,7 +22,7 @@ export default function AddUser() {
   
     const onSubmit=async(e)=>{
       e.preventDefault()
-      await axios.post("http://185.240.104.244:8080/users/saveuser",blogData)
+      await axios.post("http://94.154.46.244:8080/users/saveuser",blogData)
       navigate("/")
     }
   return (

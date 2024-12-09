@@ -9,7 +9,7 @@ export default function BlogItem() {
     const navigate=useNavigate()
     console.log(allBlogs)
     const deleteBlog=async(id)=>{
-        await axios.delete(`http://185.240.104.244:8080/blog/deleteblog/${id}`)
+        await axios.delete(`http://94.154.46.244:8080/blog/deleteblog/${id}`)
         navigate("/")
     }
     const findUserByBlogId=(blogId)=>{
